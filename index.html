@@ -1,195 +1,245 @@
 <!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutzerklärung Push-up Quest</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
-<style>
-  :root {
-    --bg: #faf8f4;
-    --surface: #ffffff;
-    --text: #1c2420;
-    --text-dim: #5b6660;
-    --accent: #2f6f5e;
-    --accent-soft: #e4efec;
-    --rule: #e1ddd3;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #141b18;
-      --surface: #1b2420;
-      --text: #eae7df;
-      --text-dim: #9aa39d;
-      --accent: #6fbba3;
-      --accent-soft: #24332c;
-      --rule: #2c3630;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #141b18;
-    --surface: #1b2420;
-    --text: #eae7df;
-    --text-dim: #9aa39d;
-    --accent: #6fbba3;
-    --accent-soft: #24332c;
-    --rule: #2c3630;
-  }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung Pixelletics</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #faf8f4;
+        --surface: #ffffff;
+        --text: #1c2420;
+        --text-dim: #5b6660;
+        --accent: #2f6f5e;
+        --accent-soft: #e4efec;
+        --rule: #e1ddd3;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #141b18;
+          --surface: #1b2420;
+          --text: #eae7df;
+          --text-dim: #9aa39d;
+          --accent: #6fbba3;
+          --accent-soft: #24332c;
+          --rule: #2c3630;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #141b18;
+        --surface: #1b2420;
+        --text: #eae7df;
+        --text-dim: #9aa39d;
+        --accent: #6fbba3;
+        --accent-soft: #24332c;
+        --rule: #2c3630;
+      }
 
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "IBM Plex Sans", system-ui, sans-serif;
-    font-size: 17px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-  .page {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 4.5rem 1.5rem 6rem;
-  }
-  .eyebrow {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 0.9rem;
-  }
-  h1 {
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-    margin: 0 0 0.6rem;
-    text-wrap: balance;
-  }
-  .updated {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.85rem;
-    color: var(--text-dim);
-    margin: 0 0 2.8rem;
-  }
-  .intro {
-    font-size: 1.08rem;
-    color: var(--text);
-    max-width: 60ch;
-    margin: 0 0 3rem;
-  }
-  section {
-    border-top: 1px solid var(--rule);
-    padding: 2.2rem 0;
-  }
-  section:last-of-type { padding-bottom: 0; }
-  h2 {
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    margin: 0 0 0.9rem;
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-  }
-  h2 .tag {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    color: var(--accent);
-    background: var(--accent-soft);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    text-transform: uppercase;
-  }
-  p { margin: 0 0 0.9rem; max-width: 62ch; }
-  p:last-child { margin-bottom: 0; }
-  ul { margin: 0; padding: 0; list-style: none; max-width: 62ch; }
-  li {
-    padding: 0.85rem 0;
-    border-top: 1px solid var(--rule);
-  }
-  li:first-child { border-top: none; padding-top: 0; }
-  li strong {
-    display: block;
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    font-size: 0.98rem;
-    margin-bottom: 0.2rem;
-  }
-  a {
-    color: var(--accent);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-  }
-  a:focus-visible, a:hover { text-decoration-thickness: 2px; }
-  footer {
-    margin-top: 3.5rem;
-    padding-top: 1.6rem;
-    border-top: 1px solid var(--rule);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-</style>
-</head>
-<body>
-<main class="page">
-  <p class="eyebrow">Datenschutzerklärung</p>
-  <h1>Push-up Quest</h1>
-  <p class="updated">Stand: 20. August 2026</p>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 6rem;
+      }
+      .eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 0.9rem;
+      }
+      h1 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin: 0 0 0.6rem;
+        text-wrap: balance;
+      }
+      .updated {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.85rem;
+        color: var(--text-dim);
+        margin: 0 0 2.8rem;
+      }
+      .intro {
+        font-size: 1.08rem;
+        color: var(--text);
+        max-width: 60ch;
+        margin: 0 0 3rem;
+      }
+      section {
+        border-top: 1px solid var(--rule);
+        padding: 2.2rem 0;
+      }
+      section:last-of-type {
+        padding-bottom: 0;
+      }
+      h2 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 1.15rem;
+        margin: 0 0 0.9rem;
+        display: flex;
+        align-items: baseline;
+        gap: 0.6rem;
+      }
+      h2 .tag {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+        color: var(--accent);
+        background: var(--accent-soft);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+      }
+      p {
+        margin: 0 0 0.9rem;
+        max-width: 62ch;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-width: 62ch;
+      }
+      li {
+        padding: 0.85rem 0;
+        border-top: 1px solid var(--rule);
+      }
+      li:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+      li strong {
+        display: block;
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 0.98rem;
+        margin-bottom: 0.2rem;
+      }
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+      a:focus-visible,
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.6rem;
+        border-top: 1px solid var(--rule);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--text-dim);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <p class="eyebrow">Datenschutzerklärung</p>
+      <h1>Pixelletics</h1>
+      <p class="updated">Stand: 20. August 2026</p>
 
-  <p class="intro">Push-up Quest ist eine Android-App zum Push-up- und Plank-Training. Diese Seite beschreibt vollständig, welche Daten die App verarbeitet — und welche nicht.</p>
+      <p class="intro">
+        Pixelletics ist eine Android-App zum Push-up- und Plank-Training. Diese
+        Seite beschreibt vollständig, welche Daten die App verarbeitet — und
+        welche nicht.
+      </p>
 
-  <section>
-    <h2><span class="tag">Speicherung</span></h2>
-    <p>Alle Trainingsdaten — Profil, Trainingsverlauf, Abzeichen, Herausforderungen — werden ausschließlich lokal auf deinem Gerät gespeichert. Die App sendet diese Daten an keinen Server und legt kein Nutzerkonto an.</p>
-  </section>
+      <section>
+        <h2><span class="tag">Speicherung</span></h2>
+        <p>
+          Alle Trainingsdaten — Profil, Trainingsverlauf, Abzeichen,
+          Herausforderungen — werden ausschließlich lokal auf deinem Gerät
+          gespeichert. Die App sendet diese Daten an keinen Server und legt kein
+          Nutzerkonto an.
+        </p>
+      </section>
 
-  <section>
-    <h2><span class="tag">Berechtigungen</span></h2>
-    <ul>
-      <li>
-        <strong>Benachrichtigungen</strong>
-        Für Trainingserinnerungen. Optional, jederzeit in den Android-Einstellungen widerrufbar.
-      </li>
-      <li>
-        <strong>Vibration</strong>
-        Für haptisches Feedback während des Trainings.
-      </li>
-      <li>
-        <strong>Näherungssensor</strong>
-        Zählt Wiederholungen automatisch. Sensordaten verlassen das Gerät nicht.
-      </li>
-      <li>
-        <strong>Health Connect</strong>
-        Nur wenn du es aktivierst: Kalorien und Trainingszeit werden in den Android-Systemdienst Health Connect geschrieben. Die Daten bleiben auf dem Gerät und nur mit deiner ausdrücklichen Zustimmung. Jederzeit über Health Connect widerrufbar.
-      </li>
-    </ul>
-  </section>
+      <section>
+        <h2><span class="tag">Berechtigungen</span></h2>
+        <ul>
+          <li>
+            <strong>Benachrichtigungen</strong>
+            Für Trainingserinnerungen. Optional, jederzeit in den
+            Android-Einstellungen widerrufbar.
+          </li>
+          <li>
+            <strong>Vibration</strong>
+            Für haptisches Feedback während des Trainings.
+          </li>
+          <li>
+            <strong>Näherungssensor</strong>
+            Zählt Wiederholungen automatisch. Sensordaten verlassen das Gerät
+            nicht.
+          </li>
+          <li>
+            <strong>Health Connect</strong>
+            Nur wenn du es aktivierst: Kalorien und Trainingszeit werden in den
+            Android-Systemdienst Health Connect geschrieben. Die Daten bleiben
+            auf dem Gerät und nur mit deiner ausdrücklichen Zustimmung.
+            Jederzeit über Health Connect widerrufbar.
+          </li>
+        </ul>
+      </section>
 
-  <section>
-    <h2><span class="tag">Käufe</span></h2>
-    <p>Der optionale Pro-Kauf läuft über Google Play Billing. Zahlungsdaten werden von Google verarbeitet — die App selbst sieht und speichert sie nicht. Es gelten die Datenschutzbestimmungen von Google Play.</p>
-  </section>
+      <section>
+        <h2><span class="tag">Käufe</span></h2>
+        <p>
+          Der optionale Pro-Kauf läuft über Google Play Billing. Zahlungsdaten
+          werden von Google verarbeitet — die App selbst sieht und speichert sie
+          nicht. Es gelten die Datenschutzbestimmungen von Google Play.
+        </p>
+      </section>
 
-  <section>
-    <h2><span class="tag">Werbung &amp; Tracking</span></h2>
-    <p>Keine Werbung, kein Analytics- oder Tracking-SDK, keine Drittanbieter-Bibliotheken zur Datenerfassung.</p>
-  </section>
+      <section>
+        <h2><span class="tag">Werbung &amp; Tracking</span></h2>
+        <p>
+          Keine Werbung, kein Analytics- oder Tracking-SDK, keine
+          Drittanbieter-Bibliotheken zur Datenerfassung.
+        </p>
+      </section>
 
-  <section>
-    <h2><span class="tag">Löschung</span></h2>
-    <p>Deinstallation der App oder Löschen der App-Daten in den Android-Einstellungen entfernt alle lokal gespeicherten Daten unwiderruflich.</p>
-  </section>
+      <section>
+        <h2><span class="tag">Löschung</span></h2>
+        <p>
+          Deinstallation der App oder Löschen der App-Daten in den
+          Android-Einstellungen entfernt alle lokal gespeicherten Daten
+          unwiderruflich.
+        </p>
+      </section>
 
-  <footer>
-    Kontakt: <a href="mailto:daniel.meiermann@gmx.de">daniel.meiermann@gmx.de</a><br>
-    Push-up Quest · Einzelentwickler-App
-  </footer>
-</main>
-</body>
+      <footer>
+        Kontakt:
+        <a href="mailto:daniel.meiermann@gmx.de">daniel.meiermann@gmx.de</a
+        ><br />
+        Pixelletics · Einzelentwickler-App
+      </footer>
+    </main>
+  </body>
 </html>
